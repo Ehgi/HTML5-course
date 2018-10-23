@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav>
-            <H1>Product name</H1>
+            <h1>Product name</h1>
             <ul>
                 <li>Put on this page information about your product</li>
                 <li>A detailed description of your product</li>
@@ -128,24 +128,18 @@
             <h2>Buy it now</h2>
             <section class="standart">
                 <h3>Standart</h3>
-                <div class="price">
-                    <h5>$100</h5>
-                </div>
+                <h5>$100</h5>
                 <ol>
                     <li>Lorem ipsum dolor sit amet.</li>
                     <li>Impedit distinctio dicta a ipsum?</li>
                     <li>A fugiat, esse consectetur quas!</li>
                     <li>Asperiores veniam, suscipit velit sit.</li>
                 </ol>
-                <div class="buy-button">
-                    <a href="#">buy</a>
-                </div>
+                <a href="#" class="buy-button">buy</a>
             </section>
             <section class="premium">
                 <h3>Premium</h3>
-                <div class="price">
-                    <h5>$150</h5>
-                </div>
+                <h5>$150</h5>
                 <ol>
                     <li>Lorem ipsum dolor sit amet.</li>
                     <li>Quibusdam rem voluptas cum provident.</li>
@@ -156,15 +150,11 @@
                     <li>Quibusdam sunt temporibus tempora veritatis.</li>
                     <li>Consequuntur veniam fugiat deserunt officiis!</li>
                 </ol>
-                <div class="buy-button">
-                    <a href="#">buy</a>
-                </div>
+                <a href="#" class="buy-button">buy</a>
             </section>
             <section class="lux">
                 <h3>Lux</h3>
-                <div class="price">
-                    <h5>$200</h5>
-                </div>
+                <h5>$200</h5>
                 <ol>
                     <li>Lorem ipsum dolor sit amet.</li>
                     <li>Aspernatur, repellendus nesciunt iste!</li>
@@ -179,22 +169,18 @@
                     <li>Laudantium officia animi itaque reiciendis.</li>
                     <li>Vitae non quisquam, temporibus! Minima.</li>
                 </ol>
-                <div class="buy-button">
-                    <a href="#">buy</a>
-                </div>
+                <a href="#" class="buy-button">buy</a>
             </section>
         </div>
     </main>
     <footer>
         <h2>Contacts</h2>
         <form action="#">
-            <fieldset>
-                <input type="name" placeholder="Your name:">
-                <input type="email" placeholder="Your email:">
-                <textarea name="message:" id="textarea" placeholder="Your message:">
+            <input type="name" placeholder="Your name:" name="name" required>
+            <input type="email" placeholder="Your email:" name="email" required>
+            <textarea name="message:" id="textarea" placeholder="Your message:" required>
                 </textarea>
-                <input type="button" value="send">
-            </fieldset>
+            <input type="submit" value="send">
         </form>
     </footer>
 </body>

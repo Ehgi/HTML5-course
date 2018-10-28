@@ -1,1 +1,18 @@
-/*зачетный макет 2*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    width: ;
+    background-image: url(img/Photo.png) no-repeat cover;
+}
+
+nav{
+    width: ;
+    display: flex;
+    justify-content: space-between;
+}

@@ -84,7 +84,10 @@ article p {
     margin: 50px auto;
 }
 
-.main1 img {
+video {
+    background-color: #445161;
+    width: 430px;
+    height: 245px;
     float: right;
 }
 
@@ -242,8 +245,8 @@ h6 {
 footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    height: 509px;
+    justify-content: center;
+    height: 535px;
     background: #445162;
 }
 
@@ -254,33 +257,73 @@ footer h2 {
 }
 
 form {
-    width: 39%;
-    margin-left: 250px;
+    margin: 0 22px;
+    width: 500px;
 }
 
-input {
-    width: 100%;
+.input {
+    width: 98%;
     display: block;
     margin-bottom: 20px;
     line-height: 40px;
     border-radius: 5px;
+    padding-left: 10px;
+    border: none;
 }
 
 textarea {
     color: #445162;
+    overflow: auto;
     font-size: 12px;
     font-weight: 400;
-    letter-spacing: 0.3px;
     line-height: 24px;
-    margin-bottom: 20px;
-    width: 100%;
+    margin-bottom: 10px;
+    width: 98%;
     height: 170px;
-    border: 2px solid grey;
+    resize: none;
+    border: none;
     border-radius: 5px;
+    padding-left: 10px;
+}
+
+textarea::-webkit-input-placeholder,
+textarea::-moz-placeholder,
+textarea:-moz-placeholder,
+textarea:-ms-input-placeholder {
+    margin: 15px;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.submit {
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    height: 40px;
+    background-color: white;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.submit:hover {
+    background-color: #e8e8e8;
+}
+
+.submit:active {
+    background-color: #445162;
 }
 
 .contacts {
-    width: 38%;
+    margin: 0 22px;
+    width: 240px;
 }
 
 .contacts detail {
@@ -306,4 +349,5 @@ textarea {
     letter-spacing: 0.3px;
     line-height: 24px;
     text-align: center;
+    margin-top: 50px;
 }

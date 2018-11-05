@@ -3,209 +3,332 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="less/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" , shrink-to-fit="no">
     <title>Зачетный макет 2</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="JS/javascript.js">
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="#"><img src="img/logos.png" alt="">Waxom</a>
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Features</a>
-            <a href="#">Blog</a>
-            <a href="#">Pricing</a>
-            <a href="#">Shortcodes</a>
-            <a href="#">Contact</a>
-            <a href="#"><img src="img/icon-cart.png" alt="cart"></a>
-            <a href="#"><img src="img/Search.png" alt="search"></a>
-        </nav>
-        <div class="menu">
-            <img src="img/left.png" alt="left">
-            <div class="header-main-text">
-                <h2>Unique and Modern Design</h2>
-                <h3>Portfolio PSD Template</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas autem, nobis ab, dolores ullam vitae.</p>
-                <a href="#" class="get-started-btn">get started</a>
+        <section class="header-top-line">
+            <a href="#" class="logo">
+                <svg class="logo-svg svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="56" viewBox="0 0 64 56">
+                    <path d="M 52.87 55.13C 52.87 55.13 58.13 45.94 58.13 45.94 58.13 45.94 63.38 55.13 63.38 55.13 63.38 55.13 52.87 55.13 52.87 55.13ZM 46.3 45.17C 46.3 45.17 56.81 45.17 56.81 45.17 56.81 45.17 51.56 54.36 51.56 54.36 51.56 54.36 46.3 45.17 46.3 45.17ZM 51.56 34.45C 51.56 34.45 56.81 43.64 56.81 43.64 56.81 43.64 46.3 43.64 46.3 43.64 46.3 43.64 51.56 34.45 51.56 34.45ZM 39.74 33.69C 39.74 33.69 50.24 33.69 50.24 33.69 50.24 33.69 44.99 42.87 44.99 42.87 44.99 42.87 39.74 33.69 39.74 33.69ZM 44.99 22.97C 44.99 22.97 50.24 32.15 50.24 32.15 50.24 32.15 39.74 32.15 39.74 32.15 39.74 32.15 44.99 22.97 44.99 22.97ZM 33.17 22.2C 33.17 22.2 43.68 22.2 43.68 22.2 43.68 22.2 38.42 31.39 38.42 31.39 38.42 31.39 33.17 22.2 33.17 22.2ZM 38.42 11.48C 38.42 11.48 43.68 20.67 43.68 20.67 43.68 20.67 33.17 20.67 33.17 20.67 33.17 20.67 38.42 11.48 38.42 11.48ZM 26.6 10.71C 26.6 10.71 37.11 10.71 37.11 10.71 37.11 10.71 31.85 19.9 31.85 19.9 31.85 19.9 26.6 10.71 26.6 10.71ZM 31.85-0.01C 31.85-0.01 37.11 9.18 37.11 9.18 37.11 9.18 26.6 9.18 26.6 9.18 26.6 9.18 31.85-0.01 31.85-0.01ZM 20.03 20.67C 20.03 20.67 25.29 11.48 25.29 11.48 25.29 11.48 30.54 20.67 30.54 20.67 30.54 20.67 20.03 20.67 20.03 20.67ZM 13.46 32.15C 13.46 32.15 18.72 22.97 18.72 22.97 18.72 22.97 23.97 32.15 23.97 32.15 23.97 32.15 13.46 32.15 13.46 32.15ZM 6.9 43.64C 6.9 43.64 12.15 34.45 12.15 34.45 12.15 34.45 17.4 43.64 17.4 43.64 17.4 43.64 6.9 43.64 6.9 43.64ZM 0.33 55.13C 0.33 55.13 5.58 45.94 5.58 45.94 5.58 45.94 10.84 55.13 10.84 55.13 10.84 55.13 0.33 55.13 0.33 55.13ZM 17.4 45.17C 17.4 45.17 12.15 54.36 12.15 54.36 12.15 54.36 6.9 45.17 6.9 45.17 6.9 45.17 17.4 45.17 17.4 45.17ZM 23.97 33.69C 23.97 33.69 18.72 42.87 18.72 42.87 18.72 42.87 13.46 33.69 13.46 33.69 13.46 33.69 23.97 33.69 23.97 33.69ZM 30.54 22.2C 30.54 22.2 25.29 31.39 25.29 31.39 25.29 31.39 20.03 22.2 20.03 22.2 20.03 22.2 30.54 22.2 30.54 22.2ZM 37.11 55.13C 37.11 55.13 26.6 55.13 26.6 55.13 26.6 55.13 31.85 45.94 31.85 45.94 31.85 45.94 37.11 55.13 37.11 55.13ZM 43.68 45.17C 43.68 45.17 38.42 54.36 38.42 54.36 38.42 54.36 33.17 45.17 33.17 45.17 33.17 45.17 43.68 45.17 43.68 45.17ZM 50.24 55.13C 50.24 55.13 39.74 55.13 39.74 55.13 39.74 55.13 44.99 45.94 44.99 45.94 44.99 45.94 50.24 55.13 50.24 55.13Z" />
+                </svg>
+                <span class="logo-span svg">Waxom</span>
+            </a>
+            <nav>
+                <a href="#" class="nav-links svg">Home</a>
+                <a href="#" class="nav-links svg">About&nbsp;Us</a>
+                <a href="#" class="nav-links svg">Portfolio</a>
+                <a href="#" class="nav-links svg">Features</a>
+                <a href="#" class="nav-links svg">Blog</a>
+                <a href="#" class="nav-links svg">Pricing</a>
+                <a href="#" class="nav-links svg">Shortcodes</a>
+                <a href="#" class="nav-links svg">Contact</a>
+            </nav>
+            <div class="extra-icons">
+                <a href="#" class="cart svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="24px" viewBox="0 0 18 24">
+                        <path d="M 15 3C 15 3 13.5 3 13.5 3 13.5 1.34 11.48-0 9-0 6.51-0 4.5 1.34 4.5 3 4.5 3 3 3 3 3 1.35 3 0 4.34 0 6 0 6 0 21 0 21 0 22.65 1.35 23.99 3 23.99 3 23.99 15 23.99 15 23.99 16.65 23.99 17.99 22.65 17.99 21 17.99 21 17.99 6 17.99 6 17.99 4.34 16.65 3 15 3ZM 9 1.5C 10.66 1.5 12 1.96 12 3 12 3 6 3 6 3 6 1.96 7.34 1.5 9 1.5ZM 16.49 21C 16.49 21.82 15.82 22.49 15 22.49 15 22.49 3 22.49 3 22.49 2.17 22.49 1.5 21.82 1.5 21 1.5 21 1.5 19.5 1.5 19.5 1.5 19.5 16.49 19.5 16.49 19.5 16.49 19.5 16.49 21 16.49 21ZM 16.49 18C 16.49 18 1.5 18 1.5 18 1.5 18 1.5 6 1.5 6 1.5 5.17 2.17 4.5 3 4.5 3 4.5 4.5 4.5 4.5 4.5 4.5 4.5 4.5 9 4.5 9 4.5 9 6 9 6 9 6 9 6 4.5 6 4.5 6 4.5 12 4.5 12 4.5 12 4.5 12 9 12 9 12 9 13.5 9 13.5 9 13.5 9 13.5 4.5 13.5 4.5 13.5 4.5 15 4.5 15 4.5 15.82 4.5 16.49 5.17 16.49 6 16.49 6 16.49 18 16.49 18Z" /></svg>
+                </a>
+                <a href="#" class="search svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px">
+                        <path d="M 23.76 22.68C 23.76 22.68 17.57 16.59 17.57 16.59 19.19 14.82 20.19 12.49 20.19 9.93 20.19 4.44 15.67-0 10.09-0 4.52-0 0 4.44 0 9.93 0 15.42 4.52 19.86 10.09 19.86 12.5 19.86 14.71 19.03 16.45 17.64 16.45 17.64 22.66 23.76 22.66 23.76 22.97 24.06 23.46 24.06 23.76 23.76 24.06 23.46 24.06 22.98 23.76 22.68ZM 10.09 18.33C 5.38 18.33 1.55 14.57 1.55 9.93 1.55 5.29 5.38 1.52 10.09 1.52 14.81 1.52 18.63 5.29 18.63 9.93 18.63 14.57 14.81 18.33 10.09 18.33Z" /></svg></a>
             </div>
-            <img src="img/right.png" alt="right">
-        </div>
-        <div class="balls">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+        </section>
+        <section class="header-main">
+            <a href="#" class="header-slider svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="73px" viewBox="0 0 40 73">
+                    <path d="M 38.03 72.98C 38.03 72.98 0 36.5 0 36.5 0 36.5 38.03 0.02 38.03 0.02 38.03 0.02 40 2.02 40 2.02 40 2.02 4.07 36.5 4.07 36.5 4.07 36.5 40 70.98 40 70.98 40 70.98 38.03 72.98 38.03 72.98Z" />
+                </svg>
+            </a>
+            <div class="header-main-text">
+                <h2 class="header-main-text-h2">Unique and Modern Design</h2>
+                <h3 class="header-main-text-h3">Portfolio PSD Template</h3>
+                <p class="header-main-text-p">Nam liber tempor cum soluta nobis eleifend option congue nihil imper-diet doming id quod mazim placerat facer possim assum.</p>
+                <a href="#" class="btn header-btn">get started</a>
+            </div>
+            <a href="#" class="header-slider svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="73px" viewBox="0 0 40 73">
+                    <path d="M 1.97 72.98C 1.97 72.98 40 36.5 40 36.5 40 36.5 1.97 0.02 1.97 0.02 1.97 0.02 0 2.02 0 2.02 0 2.02 35.93 36.5 35.93 36.5 35.93 36.5 0 70.98 0 70.98 0 70.98 1.97 72.98 1.97 72.98Z" />
+                </svg>
+            </a>
+        </section>
+        <div class="header-balls">
+            <a href="#" class="header-balls-a"></a>
+            <a href="#" class="header-balls-a"></a>
+            <a href="#" class="header-balls-a"></a>
+            <a href="#" class="header-balls-a"></a>
+            <a href="#" class="header-balls-a"></a>
         </div>
     </header>
+
+    <!--header end      main part-->
+
     <main>
-    <section class="main1"><!--когда не придумал лучшего имени:))-->
-        <details>
-            <img src="img/icon-pencil.png" alt="pencil">
-            <h4>Web & App Design</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit provident temporibus aspernatur consequatur nulla, sequi!</p>
-                <div class="main1-line"></div>
-        </details>
-        <details>
-            <img src="img/icon2.png" alt="sheets">
-            <h4>Development</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi facere nostrum saepe illum, velit, ullam?</p>
-            <div class="main1-line"></div>
-        </details>
-        <details>
-            <img src="img/icon3.png" alt="customisation">
-            <h4>Customisation</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, ad voluptatibus itaque accusantium perspiciatis impedit?</p>
-            <div class="main1-line"></div>
-        </details>
-        <details>
-            <img src="img/icon.png" alt="Marketing">
-            <h4>marketing</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eligendi pariatur, optio minima. Eligendi, facere.</p>
-            <div class="main1-line"></div>
-        </details>
-    </section>
-    <section class="realization">
-        <h4>Waxom is Realization of your ideas.</h4>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet maxime ut asperiores labore, quia eaque.</span>
-    </section>
-    <img src="" alt="">
-    <section class="realization-footer">
-        <h5>Waxom Multipurpose WordPress Theme</h5>
-        <span>Don't Forget to Rate th Tamplate. Thanks so much!</span>
-    </section>
-    
-    <section class="latest">
-        <h4>Our Latest Projects.</h4>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias culpa nisi numquam corporis voluptates suscipit!</span>
-        <div class="menu">
-            <a href="#">All</a>
-            <a href="#">Web Design</a>
-            <a href="#">Mobile App</a>
-            <a href="#">Illustration</a>
-            <a href="#">Photography</a>
-        </div>
-        <section class="latest-gallery">
-            <details>
-                <img src="" alt="">
-                <span>Lorem ipsum dolor.</span>
-                <span></span>
-            </details>
-            <details>
-                <img src="" alt="">
-                <span>Dicta nam, tempore.</span>
-                <span></span>
-            </details>
-            <details>
-                <img src="" alt="">
-                <span>Debitis, atque, obcaecati?</span>
-                <span></span>
-            </details>
-            <details>
-                <img src="" alt="">
-                <span>Voluptatibus, natus, rerum.</span>
-                <span></span>
-            </details>
-            <details>
-                <img src="" alt="">
-                <span>Natus, possimus, excepturi.</span>
-                <span></span>
-            </details>
-            <details>
-                <img src="" alt="">
-                <span>Veniam quidem, rerum.</span>
-                <span></span>
-            </details>
-            <div class="load-more-btn"></div>
+        <section class="figures">
+            <a href="#" class="figures-blocks">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49px" height="49px" viewBox="0 0 49 49" class="figures-svg">
+                    <path d="M 47.67 19.72C 47.67 19.72 33.4 33.99 33.4 33.99 33.4 33.99 0.53 48.46 0.53 48.46 0.53 48.46 15.01 15.59 15.01 15.59 15.01 15.59 29.28 1.33 29.28 1.33 29.9 0.71 30.9 0.71 31.53 1.33 32.15 1.95 32.15 2.95 31.53 3.58 31.53 3.58 17.68 17.42 17.68 17.42 17.68 17.42 9.11 36.89 9.11 36.89 9.11 36.89 12.11 39.89 12.11 39.89 12.11 39.89 31.57 31.31 31.57 31.31 31.57 31.31 45.42 17.47 45.42 17.47 46.04 16.85 47.04 16.85 47.67 17.47 48.29 18.09 48.29 19.1 47.67 19.72ZM 29.75 28.47C 29.43 28.77 29.03 28.93 28.62 28.93 28.21 28.93 27.81 28.77 27.5 28.47 26.88 27.84 26.88 26.84 27.5 26.22 27.5 26.22 40.83 12.88 40.83 12.88 41.45 12.26 42.45 12.26 43.08 12.88 43.7 13.51 43.7 14.51 43.08 15.13 43.08 15.13 29.75 28.47 29.75 28.47ZM 26.26 24.99C 25.95 25.29 25.55 25.45 25.14 25.45 24.73 25.45 24.33 25.29 24.02 24.99 23.39 24.36 23.39 23.35 24.02 22.73 24.02 22.73 37.35 9.4 37.35 9.4 37.97 8.78 38.97 8.78 39.6 9.4 40.22 10.02 40.22 11.03 39.6 11.65 39.6 11.65 26.26 24.99 26.26 24.99ZM 22.78 21.5C 22.47 21.81 22.07 21.97 21.66 21.97 21.25 21.97 20.84 21.81 20.53 21.5 19.91 20.88 19.91 19.87 20.53 19.25 20.53 19.25 33.87 5.92 33.87 5.92 34.49 5.3 35.5 5.3 36.12 5.92 36.74 6.54 36.74 7.55 36.12 8.17 36.12 8.17 22.78 21.5 22.78 21.5Z" /></svg>
+                <h4 class="figures-blocks-h4">Web & App Design</h4>
+                <span class="figures-blocks-p">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</span>
+                <div class="figures-blocks-line"></div>
+            </a>
+            <a href="#" class="figures-blocks">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="40px" viewBox="0 0 44 40" class="figures-svg">
+                    <path d="M 0.41 19.7C 0.41 19.7 4.4 17.55 4.4 17.55 4.4 17.55 21.85 26.96 21.85 26.96 21.85 26.96 39.3 17.55 39.3 17.55 39.3 17.55 43.29 19.7 43.29 19.7 43.29 19.7 21.85 31.25 21.85 31.25 21.85 31.25 0.41 19.7 0.41 19.7ZM 0.41 11.67C 0.41 11.67 21.85 0.11 21.85 0.11 21.85 0.11 43.29 11.67 43.29 11.67 43.29 11.67 21.85 23.23 21.85 23.23 21.85 23.23 0.41 11.67 0.41 11.67ZM 21.85 34.98C 21.85 34.98 39.3 25.57 39.3 25.57 39.3 25.57 43.29 27.72 43.29 27.72 43.29 27.72 21.85 39.28 21.85 39.28 21.85 39.28 0.41 27.72 0.41 27.72 0.41 27.72 4.4 25.57 4.4 25.57 4.4 25.57 21.85 34.98 21.85 34.98Z" /></svg>
+                <h4 class="figures-blocks-h4">Development</h4>
+                <span class="figures-blocks-p">Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</span>
+                <div class="figures-blocks-line"></div>
+            </a>
+            <a href="#" class="figures-blocks">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" class="figures-svg">
+                    <path d="M 43.93 21.85C 43.93 20.23 42.76 18.5 41.32 17.99 39.88 17.48 38.49 16.24 38.08 15.25 37.68 14.27 37.78 12.4 38.44 11.02 39.09 9.64 38.69 7.59 37.55 6.44 36.4 5.3 34.36 4.9 32.98 5.56 31.6 6.21 29.73 6.32 28.75 5.91 27.76 5.51 26.52 4.11 26.01 2.67 25.49 1.23 23.76 0.07 22.14 0.07 20.52 0.07 18.79 1.23 18.28 2.67 17.77 4.11 16.52 5.51 15.54 5.91 14.56 6.32 12.69 6.21 11.31 5.56 9.93 4.9 7.88 5.3 6.74 6.44 5.59 7.59 5.19 9.64 5.85 11.02 6.51 12.4 6.61 14.27 6.2 15.25 5.8 16.23 4.41 17.48 2.97 17.99 1.53 18.5 0.36 20.23 0.36 21.85 0.36 23.47 1.53 25.2 2.97 25.71 4.41 26.22 5.8 27.47 6.21 28.45 6.61 29.43 6.51 31.3 5.85 32.68 5.19 34.06 5.59 36.11 6.74 37.26 7.88 38.4 9.93 38.8 11.31 38.14 12.69 37.49 14.56 37.38 15.54 37.79 16.52 38.2 17.77 39.59 18.28 41.03 18.79 42.47 20.52 43.63 22.14 43.63 23.76 43.63 25.49 42.47 26.01 41.03 26.52 39.59 27.76 38.2 28.74 37.79 29.73 37.38 31.6 37.49 32.98 38.14 34.36 38.8 36.4 38.4 37.55 37.26 38.69 36.11 39.09 34.06 38.44 32.68 37.78 31.3 37.67 29.43 38.08 28.45 38.48 27.47 39.88 26.22 41.32 25.71 42.76 25.2 43.93 23.47 43.93 21.85ZM 22.14 29.84C 17.72 29.84 14.15 26.27 14.15 21.86 14.15 17.44 17.72 13.87 22.14 13.87 26.55 13.87 30.13 17.44 30.13 21.86 30.13 26.27 26.55 29.84 22.14 29.84Z" /></svg>
+                <h4 class="figures-blocks-h4">Customisation</h4>
+                <span class="figures-blocks-p">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</span>
+                <div class="figures-blocks-line"></div>
+            </a>
+            <a href="#" class="figures-blocks">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52px" height="36px" viewBox="0 0 52 36" class="figures-svg">
+                    <path d="M 51.41 14.34C 51.41 14.34 41.92 33.76 41.92 33.76 41.33 34.98 39.73 35.98 38.38 35.98 38.38 35.98 3.08 35.98 3.08 35.98 1.73 35.98 1.11 34.98 1.71 33.76 1.71 33.76 11.2 14.34 11.2 14.34 11.8 13.12 13.39 12.12 14.74 12.12 14.74 12.12 50.04 12.12 50.04 12.12 51.39 12.12 52.01 13.12 51.41 14.34ZM 9 13.25C 9 13.25 0.74 30.15 0.74 30.15 0.74 30.15 0.74 7.98 0.74 7.98 0.74 6.62 1.84 5.5 3.2 5.5 3.2 5.5 14.01 5.5 14.01 5.5 14.01 5.5 14.01 4.06 14.01 4.06 14.01 3.06 14.39 2.13 15.09 1.43 15.79 0.72 16.72 0.33 17.7 0.33 17.7 0.33 23.99 0.33 23.99 0.33 26.02 0.33 27.67 2 27.67 4.06 27.67 4.06 27.67 5.5 27.67 5.5 27.67 5.5 38.49 5.5 38.49 5.5 39.84 5.5 40.95 6.62 40.95 7.98 40.95 7.98 40.95 9.64 40.95 9.64 40.95 9.64 14.74 9.64 14.74 9.64 12.47 9.64 10 11.19 9 13.25ZM 16.47 5.5C 16.47 5.5 25.22 5.5 25.22 5.5 25.22 5.5 25.22 4.06 25.22 4.06 25.22 3.37 24.67 2.82 23.99 2.82 23.99 2.82 17.7 2.82 17.7 2.82 17.37 2.82 17.06 2.94 16.83 3.18 16.6 3.42 16.47 3.73 16.47 4.06 16.47 4.06 16.47 5.5 16.47 5.5Z" />
+                </svg>
+                <h4 class="figures-blocks-h4">marketing</h4>
+                <span class="figures-blocks-p">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</span>
+                <div class="figures-blocks-line"></div>
+            </a>
         </section>
-    </section>
-    <article class="video-presentaion"></article>
-    <section class="mobile">
-        <img src="" alt="">
-        <h4></h4>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sit, totam commodi dolor saepe in animi earum ipsam facilis, soluta maxime ut eligendi nulla ipsa quo ducimus laudantium, debitis quaerat quasi autem aliquid. Corrupti accusantium vitae deleniti, facere ipsa, amet!</span>
-        <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-            <li>Sapiente, quia natus deleniti dolorum, ipsa asperiores possimus!</li>
-            <li>Obcaecati soluta modi aspernatur accusantium quisquam, culpa voluptas.</li>
-            <li>Ipsum numquam, illo eum id veniam, quaerat expedita!</li>
-        </ul>
-    </section>
-    <section class="satisfaction">
-        <img src="img/we-lunched-icon1.png" alt="partners">
-        <h2>3587</h2>
-        <span>satisfied clients</span>
-        <div class="line"></div>
-        <img src="img/we-lunched-icon2.png" alt="coffee">
-        <h2>207</h2>
-        <span>cups of coffee</span>
-        <div class="line"></div>
-        <img src="img/we-lunched-icon3.png" alt="words">
-        <h2>2500</h2>
-        <span>blog posts</span>
-        <div class="line"></div>
-        <img src="img/we_launched-icon4.png" alt="hearts">
-        <h2>873</h2>
-        <span>likes</span>
-        <div class="line"></div>
-        <img src="img/we_launched_icon_5.png" alt="WeLaunched">
-        <h2>900</h2>
-        <span>we launched</span>
-        <div class="line"></div>
-    </section>
-    <section class="recent-posts">
-        <h4>Lorem ipsum dolor sit amet.</h4>
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda deserunt impedit vero tempore minima dolorum omnis voluptas debitis dolores.</span>
-        <a href="">
-            <img src="" alt="">
-            <div class="calendar">
-                <h5></h5>
-                <span></span>
+
+        <section class="realization">
+            <h4>Waxom is Realization of your ideas.</h4>
+            <span class="podzagolovok">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</span>
+        </section>
+        <div class="carousel">
+            <img src="img/browser-left.jpg" alt="browser-left" width="770" height="400" class="carousel-img carousel-left">
+            <img src="img/browser-center.jpg" alt="browser-center" width="770" height="482" class="carousel-img carousel-center">
+            <img src="img/browser-right.jpg" alt="browser-right" width="770" height="400" class="carousel-img carousel-right">
+        </div>
+        <aside class="aside">
+            <div class="aside-wrapper">
+                <div class="aside-text-wrapper">
+                    <h5><a href="#" class="aside-link">Waxom</a> Multipurpose WordPress Theme</h5>
+                    <span class="aside-span">Don't Forget to Rate th Tamplate. Thanks so much!</span>
+                </div>
+                <a href="#" class="btn aside-btn">purshase now</a>
             </div>
-            <h5>Lorem ipsum dolor sit amet.</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit.</p>
-            <summary>
-                <details></details>
-            </summary>
-        </a>
-        <a href="">
-            <img src="" alt="">
-            <div class="calendar">
-                <h5></h5>
-                <span></span>
+        </aside>
+
+        <section class="latest">
+            <h4 class="latest-h4">Our Latest Projects.</h4>
+            <span class="podzagolovok">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</span>
+            <div class="menu">
+                <a href="#" class="menu-link">All</a>
+                <a href="#" class="menu-link">Web Design</a>
+                <a href="#" class="menu-link">Mobile App</a>
+                <a href="#" class="menu-link">Illustration</a>
+                <a href="#" class="menu-link">Photography</a>
             </div>
-            <h5>Debitis quasi beatae amet. Dignissimos.</h5>
-            <p>Deleniti saepe repellat odio obcaecati est doloribus. Minus, ab?</p>
-            <summary>
-                <details></details>
-            </summary>
-        </a>
-        <a href="">
-            <img src="" alt="">
-            <div class="calendar">
-                <h5></h5>
-                <span></span>
+        </section>
+        <section class="latest-gallery">
+            <figure class="latest-figure">
+                <img src="img/phone-hand.jpg" alt="phone" width="370" height="237">
+                <figcaption class="latest-caption">
+                    <span class="latest-text1">Claritas Etiam Processus</span>
+                    <span class="latest-text2">Photography, Nature</span>
+                </figcaption>
+            </figure>
+            <figure class="latest-figure">
+                <img src="img/photo-cliff.jpg" width="370" height="237" alt="cliff">
+                <figcaption class="latest-caption">
+                    <span class="latest-text1">Quam Nutamus Farum</span>
+                    <span class="latest-text2">Graphic Design, Mock-Up</span>
+                </figcaption>
+            </figure>
+            <figure class="latest-figure">
+                <img src="img/photo-page.jpg" width="370" height="237" alt="page">
+                <figcaption class="latest-caption">
+                    <span class="latest-text1">Usus Legentis Videntur</span>
+                    <span class="latest-text2">Photography, Holiday</span>
+                </figcaption>
+            </figure>
+            <figure class="latest-figure">
+                <img src="img/photo-birds.jpg" width="370" height="237" alt="birds">
+                <figcaption class="latest-caption">
+                    <span class="latest-text1">Claritas Etiam Processus</span>
+                    <span class="latest-text2">Photography, Nature</span>
+                </figcaption>
+            </figure>
+            <figure class="latest-figure">
+                <img src="img/photo-book.jpg" width="370" height="237" alt="book">
+                <figcaption class="latest-caption">
+                    <span class="latest-text1">Quam Nutamus Farum</span>
+                    <span class="latest-text2">Graphic Design, Mock-Up</span>
+                </figcaption>
+            </figure>
+            <figure class="latest-figure">
+                <img src="img/photo-sea.jpg" width="370" height="237" alt="sea">
+                <figcaption class="latest-caption">
+                    <span class="latest-text1">Usus Legentis Videntur</span>
+                    <span class="latest-text2">Photography, Holiday</span>
+                </figcaption>
+            </figure>
+            <div class="load-more btn">load more</div>
+        </section>
+        <section class="video-presentation">
+            <video class="video" width="1920" height="705" poster="img/poster.jpg">
+                <source src="video/MP4/Type.mp4">
+                <source src="video/OGV/Type.ogv">
+                <source src="video/WEBM/Type.webm">
+                Если ваш браузер тупит и не грузит видео, не огорчайтесь,- вы всегда можете скачать его по ссылке:
+                <a href="video/MP4/Type.mp4">Скачать!</a>
+            </video>
+            <div class="video-top-layer">
+                <button class="video-player-btn"><img src="img/icon-play.png" alt="play" class="player-button-img"></button>
+                <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+                <!--куда деть эту часть скрипта, чтобы она заработала???-->
+                <script>
+                    var video = document.querySelector("#video"),
+                        button = document.querySelector("button");
+                    button.addEventListener("click", function() {
+                        video.play() video.setAttribute("controls", "controls");
+                    }, false);
+                    $(".video-player-btn").click(function() {
+                        $(".video-player-btn").addClass('video-player-btn--hide');
+                    }) >
+                </script>
+                <h5 class="video-top-layer-h5">Waxom Video Presentation</h5>
+                <p class="video-top-layer-p">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+                <p class="time">03:26</p>
             </div>
-            <h5>Porro eveniet unde dolore distinctio.</h5>
-            <p>Dolorem possimus, ullam magni odio velit veniam maxime labore.</p>
-            <summary>
-                <details></details>
-            </summary>
-        </a>
-        <a href="" class="recent-arrows"></a><a href="" class="recent-arrows"></a>
-    </section>
+        </section>
+        <div class="mobile-wrapper">
+            <figure class="mobile">
+                <img src="img/iPhone-in-hand.png" alt="iphone in a hand" width="423" height="616">
+                <figcaption class="mobile-caption">
+                    <h4 class="mobile-h4">Excellent for Moblie Devices.</h4>
+                    <p class="m-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sit, totam commodi dolor saepe in animi earum ipsam facilis, soluta maxime ut eligendi nulla ipsa quo ducimus laudantium, debitis quaerat quasi autem aliquid. Corrupti accusantium vitae deleniti, facere ipsa, amet!</p>
+                    <details>
+                        <summary class="mobile-det">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            <p></p>
+                        </summary>
+                    </details>
+                    <details>
+                        <summary class="mobile-det">
+                            Sapiente, quia natus deleniti dolorum, ipsa asperiores possimus!
+                            <p></p>
+                        </summary>
+                    </details>
+                    <details>
+                        <summary class="mobile-det">
+                            Obcaecati soluta modi aspernatur accusantium quisquam, culpa voluptas.
+                            <p></p>
+                        </summary>
+                    </details>
+                    <details>
+                        <summary class="mobile-det">
+                            Ipsum numquam, illo eum id veniam, quaerat expedita.
+                            <p></p>
+                        </summary>
+                    </details>
+                </figcaption>
+            </figure>
+        </div>
+        <section class="satisfaction">
+            <figure class="sat-block">
+                <img src="img/we-lunched-icon1.png" alt="partners" width="54" height="44">
+                <figcaption class="sat-caption">
+                    <h2 class="sat-number">3587</h2>
+                    <span class="sat-span">satisfied clients</span>
+                    <div class="sat-line"></div>
+                </figcaption>
+            </figure>
+            <figure class="sat-block">
+                <img src="img/we-lunched-icon2.png" alt="coffee" width="44" height="44">
+                <figcaption class="sat-caption">
+                    <h2 class="sat-number">207</h2>
+                    <span class="sat-span">cups of coffee</span>
+                    <div class="sat-line"></div>
+                </figcaption>
+            </figure>
+            <figure class="sat-block">
+                <img src="img/we-lunched-icon3.png" width="44" height="44" alt="words">
+                <figcaption class="sat-caption">
+                    <h2 class="sat-number">2500</h2>
+                    <span class="sat-span">blog posts</span>
+                    <div class="sat-line"></div>
+                </figcaption>
+            </figure>
+            <figure class="sat-block">
+                <img src="img/we_launched-icon4.png" width="44" height="44" alt="hearts">
+                <figcaption class="sat-caption">
+                    <h2 class="sat-number">873</h2>
+                    <span class="sat-span">likes</span>
+                    <div class="sat-line"></div>
+                </figcaption>
+            </figure>
+            <figure class="sat-block">
+                <img src="img/we_launched_icon_5.png" width="44" height="44" alt="WeLaunched">
+                <figcaption class="sat-caption">
+                    <h2 class="sat-number">900</h2>
+                    <span class="sat-span">we launched</span>
+                    <div class="sat-line"></div>
+                </figcaption>
+            </figure>
+        </section>
+        <section class="recent-posts">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda deserunt impedit vero tempore minima dolorum omnis voluptas debitis dolores.</span>
+            <a href="">
+                <img src="#" alt="#">
+                <div class="calendar">
+                    <h5></h5>
+                    <span></span>
+                </div>
+                <h5>Lorem ipsum dolor sit amet.</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit.</p>
+                <summary>
+                    <details></details>
+                </summary>
+            </a>
+            <a href="#">
+                <img src="#" alt="#">
+                <div class="calendar">
+                    <h5></h5>
+                    <span></span>
+                </div>
+                <h5>Debitis quasi beatae amet. Dignissimos.</h5>
+                <p>Deleniti saepe repellat odio obcaecati est doloribus. Minus, ab?</p>
+                <summary>
+                    <details></details>
+                </summary>
+            </a>
+            <a href="#">
+                <img src="#" alt="#">
+                <div class="calendar">
+                    <h5></h5>
+                    <span></span>
+                </div>
+                <h5>Porro eveniet unde dolore distinctio.</h5>
+                <p>Dolorem possimus, ullam magni odio velit veniam maxime labore.</p>
+                <summary>
+                    <details></details>
+                </summary>
+            </a>
+            <a href="#" class="recent-arrows"></a><a href="#" class="recent-arrows"></a>
+        </section>
     </main>
-    
+
     <footer>
-       <section class="logotips">
-           <img src="" alt="">
-           <img src="" alt="">
-           <img src="" alt="">
-           <img src="" alt="">
-       </section>
+        <section class="logotips">
+            <img src="#" alt="#">
+            <img src="#" alt="#">
+            <img src="#" alt="#">
+            <img src="#" alt="#">
+        </section>
         <section class="main-footer">
             <section></section>
             <section></section>
@@ -213,16 +336,16 @@
             <section></section>
         </section>
         <section class="footer-copyrights">
-        <span>Copyright &copy 2015</span>
-        <a href="#">Waxom</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">FAQ</a>
-        <a href="#">Support</a>
-        <span>Designed by<a href="#">ThemeFire</a></span>
-        <span>Only on<a href="#">Envato Market</a></span>
+            <span>Copyright &copy; 2015</span>
+            <a href="#">Waxom</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">FAQ</a>
+            <a href="#">Support</a>
+            <span>Designed by<a href="#">ThemeFire</a></span>
+            <span>Only on<a href="#">Envato Market</a></span>
         </section>
     </footer>
-    
+
 </body>
 
 </html>

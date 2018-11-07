@@ -178,7 +178,7 @@
             <div class="load-more btn">load more</div>
         </section>
         <section class="video-presentation">
-            <video class="video" width="1920" height="705" poster="img/poster.jpg">
+            <video class="video" id="video" width="1920" height="705" poster="img/poster.jpg">
                 <source src="video/MP4/Type.mp4">
                 <source src="video/OGV/Type.ogv">
                 <source src="video/WEBM/Type.webm">
@@ -186,19 +186,8 @@
                 <a href="video/MP4/Type.mp4">Скачать!</a>
             </video>
             <div class="video-top-layer">
-                <button class="video-player-btn"><img src="img/icon-play.png" alt="play" class="player-button-img"></button>
-                <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-                <!--куда деть эту часть скрипта, чтобы она заработала???-->
-                <script>
-                    var video = document.querySelector("#video"),
-                        button = document.querySelector("button");
-                    button.addEventListener("click", function() {
-                        video.play() video.setAttribute("controls", "controls");
-                    }, false);
-                    $(".video-player-btn").click(function() {
-                        $(".video-player-btn").addClass('video-player-btn--hide');
-                    }) >
-                </script>
+                <button class="video-player-btn">
+                    <img src="img/icon-play.png" alt="play" class="player-button-img"></button>
                 <h5 class="video-top-layer-h5">Waxom Video Presentation</h5>
                 <p class="video-top-layer-p">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
                 <p class="time">03:26</p>
@@ -279,45 +268,38 @@
                 </figcaption>
             </figure>
         </section>
-        <section class="recent-posts">
-            <h4>Lorem ipsum dolor sit amet.</h4>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda deserunt impedit vero tempore minima dolorum omnis voluptas debitis dolores.</span>
-            <a href="">
-                <img src="#" alt="#">
+        <section class="recent">
+            <h4>Recent Posts.</h4>
+            <span class="podzagolovok">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</span>
+            <a href="#" class="recent-block">
+                <img src="../img/photo-legs.jpg" alt="#">
                 <div class="calendar">
-                    <h5></h5>
-                    <span></span>
+                    <span class="calendar-date">30</span>
+                    <span class="calendar-month">Sep.</span>
                 </div>
-                <h5>Lorem ipsum dolor sit amet.</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit.</p>
-                <summary>
-                    <details></details>
-                </summary>
+                <div class="recent-text">
+                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                </div>
             </a>
-            <a href="#">
-                <img src="#" alt="#">
+            <a href="#" class="recent-block recent-2">
                 <div class="calendar">
-                    <h5></h5>
-                    <span></span>
+                    <span class="calendar-date">30</span>
+                    <span class="calendar-month">Sep.</span>
                 </div>
-                <h5>Debitis quasi beatae amet. Dignissimos.</h5>
-                <p>Deleniti saepe repellat odio obcaecati est doloribus. Minus, ab?</p>
-                <summary>
-                    <details></details>
-                </summary>
+                <div class="recent-text">
+                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                </div>
             </a>
-            <a href="#">
+            <div class="recent-block">
                 <img src="#" alt="#">
-                <div class="calendar">
-                    <h5></h5>
-                    <span></span>
-                </div>
-                <h5>Porro eveniet unde dolore distinctio.</h5>
-                <p>Dolorem possimus, ullam magni odio velit veniam maxime labore.</p>
-                <summary>
-                    <details></details>
-                </summary>
-            </a>
+                    <h5>Lorem ipsum dolor sit amet.</h5>
+                    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                    <a href="#">Read more</a>
+                    <span class="calendar-date">30</span>
+                    <span class="calendar-month">Sep.</span>
+            </div>
             <a href="#" class="recent-arrows"></a><a href="#" class="recent-arrows"></a>
         </section>
     </main>
@@ -345,7 +327,8 @@
             <span>Only on<a href="#">Envato Market</a></span>
         </section>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/javascript.js"></script>
 </body>
 
 </html>

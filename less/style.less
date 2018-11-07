@@ -82,6 +82,7 @@ p {
     text-transform: uppercase;
     border-left: 1px @active solid;
     border-top: 1px @active solid;
+    transition: 0.5s;
 }
 
 
@@ -127,7 +128,14 @@ header {
 .svg {
     fill: @norm;
     color: @norm;
+    transition: 0.3s;
 }
+
+.logo:hover .svg {
+    fill: @hover;
+    color: @hover;
+}
+
 
 .svg:hover {
     fill: @hover;
@@ -199,6 +207,7 @@ nav {
 
 .header-slider:hover {
     color: #fff;
+    transform: rotate(360deg);
 }
 
 .header-balls {
@@ -321,8 +330,24 @@ nav {
     top: 82px;
 }
 
-.carousel-img:hover {
+.carousel-left:hover {
+    left: 230px;
+    top: 10px;
     z-index: 3;
+    transform: scale(1.6);
+}
+
+.carousel-center:hover {
+    top: -28px;
+    z-index: 3;
+    transform: scale(1.3);
+}
+
+.carousel-right:hover {
+    left: 230px;
+    top: 10px;
+    z-index: 3;
+    transform: scale(1.6);
 }
 
 .aside {
@@ -400,6 +425,7 @@ nav {
     background-color: rgba(17, 17, 17, 0);
     width: 135px;
     height: 32px;
+    transition: 0.5s;
 }
 
 .menu-link:first-of-type {
@@ -439,7 +465,7 @@ nav {
     width: 370px;
     height: 100px;
     position: relative;
-    top: -4px;
+    top: -5px;
 }
 
 .latest-caption::before {
@@ -448,13 +474,13 @@ nav {
     border-bottom: 7px solid @main-back;
     position: absolute;
     left: 20px;
-    top: -22px;
+    top: -21px;
 }
 
 .latest-caption::after {
     content: '';
     position: absolute;
-    top: -236px;
+    top: -237px;
     width: 370px;
     height: 237px;
     color: rgba(0, 0, 0, 0.4);
@@ -511,6 +537,8 @@ nav {
     margin: 25px auto 80px;
 }
 
+/* new block with video */
+
 .video-presentation {
     position: relative;
     margin-bottom: 80px;
@@ -536,6 +564,7 @@ nav {
     outline: none;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
 }
 
 .player-button-img {
@@ -543,7 +572,6 @@ nav {
 }
 
 .video-player-btn--hide {
-    display: none;
     outline: none;
 }
 
@@ -636,10 +664,11 @@ nav {
     left: -40px;
     top: 5px;
     background: url(../img/strelka.png);
+    transition: 0.5s;
 }
 
 details[open] .mobile-det:before {
-    background: url(../img/strelka-down.png);
+    transform: rotate(90deg);
 }
 
 details[open] .mobile-det {
@@ -694,9 +723,23 @@ details[open] .mobile-det {
     text-align: center;
 }
 
-.sat-line{
+.sat-line {
     margin: 0 auto;
     width: 30px;
     height: 2px;
     background: @norm;
+}
+
+.recent {
+    width: @main-width;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recent-block{
+    display: block;
+    width: 370px;
+    height: 395px;
 }

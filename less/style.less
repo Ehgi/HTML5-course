@@ -1,0 +1,702 @@
+@import "variables.less";
+/*не доделал ховер цепочку и лупу в latest*/
+/*didn't made pseudo-white background in some main blocks*/
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    width: @max-width;
+}
+
+/*stylization*/
+
+h2 {
+    margin: 0;
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+}
+
+h4 {
+    font-family: Raleway;
+    color: #555555;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+h5 {
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: left;
+}
+
+p {
+    margin: 0;
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+}
+
+.header-btn {
+    margin: 0 auto;
+}
+
+.btn {
+    width: 170px;
+    height: 50px;
+    display: block;
+    border-radius: 3px;
+    background-color: @btn-back;
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 53px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-left: 1px @active solid;
+    border-top: 1px @active solid;
+}
+
+
+.btn:hover {
+    background-color: @btn-back-hover;
+    border-left: 1px @active solid;
+    border-top: 1px @active solid;
+}
+
+.btn:active {
+    color: @hover;
+    background-color: #998675;
+    border-top: none;
+    border-left: none;
+    border-right: 1px @hover solid;
+    border-bottom: 1px @hover solid;
+}
+
+header {
+    width: 100%;
+    height: 1024px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/header-back.jpg);
+}
+
+.header-top-line {
+    margin: 0 auto;
+    padding-top: 40px;
+    width: @main-width;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: block;
+    display: flex;
+    align-items: center;
+    width: 179px;
+}
+
+.svg {
+    fill: @norm;
+    color: @norm;
+}
+
+.svg:hover {
+    fill: @hover;
+    color: @hover;
+}
+
+.svg:active {
+    fill: @active;
+    color: @active;
+}
+
+.logo-span {
+    font-family: Raleway;
+    color: @norm;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+nav {
+    width: 673px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 7%;
+}
+
+.nav-links {
+    font-family: Montserrat;
+    display: inline;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.extra-icons {
+    width: 76px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main {
+    width: 84.3%;
+    margin: 0 auto 327px;
+    padding-top: 285px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-main-text {
+    width: 589px;
+}
+
+.header-main-text-h3 {
+    margin-bottom: 10px;
+}
+
+.header-main-text-p {
+    margin-bottom: 52px;
+}
+
+
+.header-slider {
+    color: #d3c1ad;
+    width: 40px;
+    height: 73px;
+}
+
+.header-slider:hover {
+    color: #fff;
+}
+
+.header-balls {
+    margin: 0 auto 25px;
+    width: 110px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.header-balls-a {
+    background: url(../img/balls.png) no-repeat;
+    width: 15px;
+    height: 15px;
+}
+
+.header-balls-a:hover {
+    background: url(../img/balls-hover.png);
+}
+
+/*header end*/
+
+.figures {
+    margin: 80px auto;
+    width: @main-width;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.figures-blocks {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.figures-svg {
+    width: 100%;
+    fill: #555555;
+    margin: 0 auto 30px auto;
+}
+
+.figures-blocks-h4 {
+    margin: 0 auto 19px;
+}
+
+.figures-blocks-p {
+    font-family: Montserrat;
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto 30px;
+}
+
+.figures-blocks-line {
+    width: 70px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: @main-norm-line;
+}
+
+.figures-blocks:hover .figures-svg {
+    fill: @hover;
+}
+
+.figures-blocks:hover .figures-blocks-h4 {
+    color: @hover;
+}
+
+.figures-blocks:hover .figures-blocks-line {
+    background-color: @hover;
+}
+
+.realization h4 {
+    margin-bottom: 25px;
+}
+
+.podzagolovok {
+    display: block;
+    margin: 0 auto 40px;
+    width: 757px;
+    height: 43px;
+    font-family: Montserrat;
+    color: #8c8c8c;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+}
+
+.carousel {
+    width: @video-width;
+    height: 482px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-left {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 82px;
+}
+
+.carousel-center {
+    display: block;
+    position: absolute;
+    left: 230px;
+    top: 0px;
+    z-index: 1;
+}
+
+.carousel-right {
+    display: block;
+    position: absolute;
+    left: 460px;
+    top: 82px;
+}
+
+.carousel-img:hover {
+    z-index: 3;
+}
+
+.aside {
+    width: @max-width;
+    height: 150px;
+    background: url(../img/Background.jpg) no-repeat;
+    margin-bottom: 81px;
+}
+
+.aside-wrapper {
+    margin: 0 auto;
+    padding: 50px;
+    width: @main-width;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside-link {
+    color: @hover;
+}
+
+.aside-link:hover {
+    color: @active;
+}
+
+.aside-link:active {
+    color: @norm;
+}
+
+.aside-span {
+    font-family: Montserrat;
+    color: #615855;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.latest {
+    margin: 0 auto;
+    width: @main-width;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.latest-h4 {
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 24px;
+}
+
+.menu {
+    display: block;
+    margin: 0 auto 40px;
+    max-width: 604px;
+    display: flex;
+    flex: auto;
+    justify-content: space-between;
+}
+
+.menu-link {
+    display: block;
+    margin: 5px;
+    font-family: Montserrat;
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ebebeb;
+    box-sizing: border-box;
+    background-color: rgba(17, 17, 17, 0);
+    width: 135px;
+    height: 32px;
+}
+
+.menu-link:first-of-type {
+    width: 70px;
+}
+
+.menu-link:hover {
+    background-color: @btn-back;
+    color: @norm;
+}
+
+.menu-link:active {
+    background-color: @hover;
+    color: @main-norm;
+}
+
+.latest-gallery {
+    margin: 0 auto;
+    width: @main-width;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.latest-figure {
+    width: 370px;
+    height: 337px;
+    margin: 0 auto 30px;
+    background-color: @main-back;
+}
+
+/*откуда-то взялась прослойка 4px между картинкой и figcaption*/
+.latest-caption {
+    outline: 0;
+    border: 0;
+    display: block;
+    width: 370px;
+    height: 100px;
+    position: relative;
+    top: -4px;
+}
+
+.latest-caption::before {
+    content: '';
+    border: 15px solid transparent;
+    border-bottom: 7px solid @main-back;
+    position: absolute;
+    left: 20px;
+    top: -22px;
+}
+
+.latest-caption::after {
+    content: '';
+    position: absolute;
+    top: -236px;
+    width: 370px;
+    height: 237px;
+    color: rgba(0, 0, 0, 0.4);
+    z-index: 5;
+}
+
+.latest-text1,
+.latest-text2 {
+    display: block;
+}
+
+.latest-text1 {
+    padding: 20px 0 10px 30px;
+    font-family: Raleway;
+    color: #c7b29a;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.latest-text2 {
+    padding-left: 30px;
+    font-family: Montserrat;
+    color: #d1d1d1;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+}
+
+.latest-figure:hover .latest-caption::after {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.latest-figure:hover .latest-caption {
+    background-color: @figure-back-hover;
+}
+
+.latest-figure:hover .latest-caption::before {
+    content: '';
+    border: 15px solid transparent;
+    border-bottom: 7px solid @figure-back-hover;
+}
+
+.latest-figure:hover .latest-text1 {
+    color: @norm;
+}
+
+.latest-figure:hover .latest-text2 {
+    color: @hover;
+}
+
+.load-more {
+    margin: 25px auto 80px;
+}
+
+.video-presentation {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.video-top-layer {
+    width: 552px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    left: 685px;
+    top: 210px;
+    z-index: 5;
+}
+
+.video-player-btn {
+    display: block;
+    margin: 0 auto 35px;
+    width: 101px;
+    height: 100px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.player-button-img {
+    margin: 2px 0 0 2px;
+}
+
+.video-player-btn--hide {
+    display: none;
+    outline: none;
+}
+
+.video-player-btn:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.video-player-btn:active {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+.video-top-layer-h5 {
+    display: block;
+    width: 100%;
+    margin: 0 auto 20px;
+    color: @norm;
+    text-align: center;
+}
+
+.video-top-layer-p {
+    margin: 0 auto 30px;
+    font-family: Montserrat;
+    color: @norm;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+}
+
+.time {
+    width: 100%;
+    color: @hover;
+}
+
+/* new block called "mobile"*/
+.mobile-wrapper {
+    width: 100%;
+    background-color: @main-back;
+}
+
+.mobile {
+    margin: 0 auto;
+    width: @main-width;
+    display: flex;
+    align-items: flex-start;
+}
+
+.mobile-caption {
+    margin-top: 120px;
+    margin-left: 20px;
+}
+
+.mobile-h4 {
+    margin-bottom: 30px;
+}
+
+.m-p {
+    width: 657px;
+    color: #8c8c8c;
+    line-height: 28px;
+    text-align: left;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.mobile-det {
+    display: block;
+    margin-left: 50px;
+    color: @main-norm-text;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: left;
+    position: relative;
+    outline: none;
+}
+
+.mobile-det::-webkit-details-marker {
+    display: none;
+}
+
+.mobile-det:before {
+    content: "";
+    display: block;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    left: -40px;
+    top: 5px;
+    background: url(../img/strelka.png);
+}
+
+details[open] .mobile-det:before {
+    background: url(../img/strelka-down.png);
+}
+
+details[open] .mobile-det {
+    color: @hover;
+}
+
+.satisfaction {
+    width: 100%;
+    height: 300px;
+    background: url(../img/served-Background.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sat-block {
+    width: 210px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sat-block img {
+    margin: 0 auto 20px;
+}
+
+.sat-caption {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sat-number {
+    width: 100%;
+    display: block;
+    margin: 0 auto 10px;
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 200;
+    line-height: 36px;
+    text-align: center;
+}
+
+.sat-span {
+    width: 100%;
+    display: block;
+    margin: 0 auto 30px;
+    font-family: Montserrat;
+    color: #c7b299;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+}
+
+.sat-line{
+    margin: 0 auto;
+    width: 30px;
+    height: 2px;
+    background: @norm;
+}

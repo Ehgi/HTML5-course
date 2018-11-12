@@ -106,7 +106,7 @@ header {
     height: 1024px;
     background-size: cover;
     background-position: center;
-    background-image: url(../img/header-back.jpg);
+    background-image: url(../img/header.jpg);
 }
 
 .header-top-line {
@@ -136,6 +136,10 @@ header {
     color: @hover;
 }
 
+.logo:active .svg {
+    fill: @active;
+    color: @active;
+}
 
 .svg:hover {
     fill: @hover;
@@ -475,6 +479,7 @@ nav {
     position: absolute;
     left: 20px;
     top: -21px;
+    z-index: 6;
 }
 
 .latest-caption::after {
@@ -483,7 +488,6 @@ nav {
     top: -237px;
     width: 370px;
     height: 237px;
-    color: rgba(0, 0, 0, 0.4);
     z-index: 5;
 }
 
@@ -520,7 +524,6 @@ nav {
 }
 
 .latest-figure:hover .latest-caption::before {
-    content: '';
     border: 15px solid transparent;
     border-bottom: 7px solid @figure-back-hover;
 }
@@ -542,6 +545,7 @@ nav {
 .video-presentation {
     position: relative;
     margin-bottom: 80px;
+    z-index: 1;
 }
 
 .video-top-layer {
@@ -552,7 +556,7 @@ nav {
     position: absolute;
     left: 685px;
     top: 210px;
-    z-index: 5;
+    z-index: 2;
 }
 
 .video-player-btn {
@@ -564,7 +568,7 @@ nav {
     outline: none;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.2);
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .player-button-img {
@@ -583,6 +587,8 @@ nav {
     outline: none;
     background-color: rgba(0, 0, 0, 0.0);
 }
+
+.hidden {}
 
 .video-top-layer-h5 {
     display: block;
@@ -678,6 +684,7 @@ details[open] .mobile-det {
 .satisfaction {
     width: 100%;
     height: 300px;
+    margin-bottom: 82px;
     background: url(../img/served-Background.jpg);
     display: flex;
     align-items: center;
@@ -738,8 +745,350 @@ details[open] .mobile-det {
     justify-content: space-between;
 }
 
-.recent-block{
+.recent-h4 {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.recent-podzagolovok {
+    width: 100%;
+    padding: 0 50px;
+    margin: 0 auto;
+    font-family: Montserrat;
+    color: #8c8c8c;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+}
+
+.recent-articles-wrapper {
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-block {
     display: block;
     width: 370px;
     height: 395px;
+    background-color: @main-back;
+    position: relative;
+}
+
+.recent-text1 {
+    font-family: Raleway;
+    color: #555555;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    margin: 30px 0 20px 30px;
+}
+
+.recent-text2 {
+    display: block;
+    margin: 0 0 25px 30px;
+    font-family: Montserrat;
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: left;
+}
+
+.recent-link {
+    display: block;
+    width: 90px;
+    margin-left: 30px;
+    font-family: Montserrat;
+    color: #c7b299;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    background: url(../img/recent-right-arrow.png) no-repeat;
+    background-position: right;
+}
+
+.calendar {
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.calendar-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35px;
+    background-color: #363636;
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 20px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.calendar-month {
+    display: block;
+    width: 100%;
+    height: 25px;
+    margin: 0 auto;
+    background-color: #252525;
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.recent-block:hover .recent-img {
+    filter: brightness(25%);
+}
+
+.recent-block:hover {
+    background-color: @figure-back-hover;
+}
+
+.recent-block:hover .calendar-date {
+    background-color: @hover;
+}
+
+.recent-block:hover .calendar-month {
+    background-color: #a48d72;
+}
+
+.recent-block:hover .recent-text1 {
+    color: @hover;
+}
+
+.recent-block:hover .recent-text2 {
+    color: #fff;
+}
+
+.recent-link:active {
+    color: #fff;
+}
+
+.recent-arrows-wrapper {
+    width: 100%;
+    margin: 0 auto 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.recent-arrows {
+    width: 22px;
+    height: 22px;
+    margin: 0 4px;
+    background-image: url(../img/recent-left.png);
+}
+
+.recent-right {
+    transform: rotate(180deg);
+}
+
+.recent-left:hover {
+    background-image: url(../img/recent-right.png);
+    transform: rotate(180deg);
+}
+
+.recent-right:hover {
+    background-image: url(../img/recent-right.png);
+    transform: rotate(0deg);
+}
+
+.logotips {
+    width: @max-width;
+    height: 489px;
+    background-image: url(../img/footer-logos.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logotip {
+    margin: 0 45px;
+}
+
+.logotips:hover {
+    background-image: url(../img/partners-back.jpg);
+}
+
+.main-footer {
+    width: 100%;
+    height: 508px;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-footer-part {
+    padding: 0;
+    width: 270px;
+    margin: 15px;
+}
+
+.main-footer-part1-logo {
+    margin-bottom: 30px;
+}
+
+.main-footer-part1-text {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    font-family: Montserrat;
+    color: #545454;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+}
+
+.read-more {
+    display: block;
+    width: 90px;
+    margin-bottom: 60px;
+    font-family: Montserrat;
+    color: #d1d1d1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    background: url(../img/read-more-arrow.png) no-repeat;
+    background-position: right;
+}
+
+.read-more:hover {
+    color: @hover;
+    background: url(../img/recent-right-arrow.png) no-repeat;
+    background-position: right;
+}
+
+.read-more:active {
+    color: @active;
+}
+
+.main-footer-parts-text1 {
+    display: block;
+    margin-bottom: 30px;
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.main-footer-parts-textblock:hover .main-footer-parts-text2 {
+    color: #fff;
+}
+
+.main-footer-parts-textblock:hover .main-footer-parts-text3 {
+    color: @hover;
+}
+
+.main-footer-parts-text2 {
+    display: block;
+    font-family: Montserrat;
+    color: #363636;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+}
+
+.main-footer-parts-text3 {
+    display: block;
+    font-family: Montserrat;
+    color: #545454;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+}
+
+.twitter-link {
+    color: #00bff3;
+}
+
+.twitter-link:hover {
+    filter: brightness(25%);
+}
+
+.twitter-link:active {
+    color: #fff;
+}
+
+.footer-link {
+    color: #959595;
+}
+
+.footer-link:hover {
+    color: @hover;
+}
+
+.footer-link:active {
+    color: @active;
+}
+
+/* мне несколько жутко от того насколько эти ховеры получились разноцветными, и очевидно, что такая цветовая разножопица смотрится странно, но это учебный проект:)) */
+
+.divider {
+    background-color: #252525;
+    width: 270px;
+    height: 2px;
+    margin: 15px auto;
+}
+
+.main-footer-part4 {
+    display: flex;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-footer-parts-photo {
+    width: 130px;
+    height: 98px;
+    margin: 5px 0;
+}
+
+.footer-copyrights {
+    width: 100%;
+    height: 111px;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy-wrapper,
+.copy-left-side-wrapper
+.copy-right-side-wrapper{
+    width: @main-width;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy-span,
+.no-link {
+    font-family: Montserrat;
+    color: #545454;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
 }

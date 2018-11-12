@@ -8,4 +8,5 @@ button.addEventListener("click", function() {
 
 $(".video-player-btn").click(function() {
   $(".video-player-btn").addClass('video-player-btn--hide');
+    $(".video-top-layer").addClass('video-player-btn--hide');
 })
